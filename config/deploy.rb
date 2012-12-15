@@ -11,7 +11,7 @@ set :use_sudo, false
 set :scm, "git"
 set :repository, "git@199.229.249.151:vtmgame"
 set :branch, "master"
-set :rvm_ruby_string, '1.9.3@temple'
+set :rvm_ruby_string, '1.9.3@vtmgame'
 
 require "rvm/capistrano"
 
