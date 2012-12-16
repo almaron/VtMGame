@@ -15,7 +15,6 @@ gem 'sorcery'
  gem "omniauth-twitter"
 
 
-
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -59,12 +58,14 @@ gem "carrierwave"
  gem 'rvm-capistrano'
 
 
-gem "rspec-rails", :group => [:test, :development]
-gem 'rb-inotify', '~> 0.8.8'
-group :test do
+group :development, :test do
+  gem "rspec-rails"
+  gem 'rb-inotify', '~> 0.8.8'
   gem "factory_girl_rails"
   gem "capybara"
   gem "guard-rspec"
+  gem "guard-rails"
+  gem "guard-livereload"
 end
 
  gem 'thin'
