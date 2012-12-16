@@ -11,6 +11,19 @@ development:
 
   host: "localhost:3000"
 
+test:
+
+  smtp:
+    address: "smtp.gmail.com"
+    port: "587"
+    domain: "templeofwisdom.ru"
+    user_name: "master@templeofwisdom.ru"
+    password: "padme_amidala"
+    authentication: "plain"
+    enable_starttls_auto: true
+
+  host: "localhost:3000"
+
 production:
 
   smtp:
