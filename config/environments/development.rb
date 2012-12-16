@@ -36,4 +36,12 @@ Vtmgame::Application.configure do
   config.assets.debug = true
 
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+
+  config.middleware.insert_before(
+      Rack::Lock, Rack::LiveReload,
+      :min_delay => 50,
+      :max_delay => 10000,
+      :port => 35729,
+      :host => 'localhost'
+  )
 end

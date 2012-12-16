@@ -66,6 +66,7 @@ group :development, :test do
   gem "guard-rspec"
   gem "guard-rails"
   gem "guard-livereload"
+  gem "rack-livereload"
 end
 
  gem 'thin'
