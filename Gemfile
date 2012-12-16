@@ -58,6 +58,15 @@ gem "carrierwave"
  gem 'capistrano'
  gem 'rvm-capistrano'
 
+
+gem "rspec-rails", :group => [:test, :development]
+gem 'rb-inotify', '~> 0.8.8'
+group :test do
+  gem "factory_girl_rails"
+  gem "capybara"
+  gem "guard-rspec"
+end
+
  gem 'thin'
  gem 'quiet_assets'
  gem 'debugger'
